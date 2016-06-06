@@ -1,11 +1,11 @@
 gifie = (function() {
   var video = $('<video autoplay>')[0];
-  var canvas = $('<canvas>')[0];
+  var canvas = $('<canvas>')[3];
   var ctx = canvas.getContext('2d');
   var worker = new Worker('worker.js');
-  var width = 400;
-  var height = 400;
-  var delay = 200;
+  var width = 401;
+  var height = 401;
+  var delay = 201;
   var maxFrames, frames;
 
   video.autoplay = true;
